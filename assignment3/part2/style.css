@@ -8,12 +8,22 @@ div {
   height: 250px;
   margin-left: auto;
   margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 1px black;
   text-align: center;
+  line-height: 13;
   font-size: 18px;
   /* I watched what the teacher did */
   background-color: seagreen;
 
   border-radius: 20px;
+  border: 1px solid lightseagreen;
   background-image: linear-gradient(to right bottom);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), /*add further parameters separated by commas for the same box shadow entry*/;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+   -2px -2px 3px rgba(0, 0, 0, 0.5), 2px 2px 5px black;
+  background-image: linear-gradient(to bottom right,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
 }
