@@ -1,5 +1,8 @@
 /* General setup */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -39,37 +42,48 @@ header, section, aside, nav, footer {
 /* header and footer */
 
 header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+  border-top: 5px solid gold;
+  border-bottom: 5px solid gold;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
 
+/* fonts */
+
+
 h1 {
   font-size: 3rem;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 1.5px;
   text-align: center;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: 'DM Serif Display', serif;
+  letter-spacing: 1.5px;
 }
 
 p {
   font-size: 1em;
   line-height: 1.7;
+  font-family: 'IBM Plex Serif', serif;
 }
 
-a:link {
-
-}
-
-a:hover, a:focus {
+a:hover, a:focus, a:link {
   text-decoration: none;
-  color: gold;
+  color: goldenrod;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
 }
 
 a:visited {
-  color: goldenrod;
+  color: gold;
 }
 
 a:focus {
@@ -82,4 +96,50 @@ section ul {
 
 li {
   line-height: 1.7;
+}
+
+ul {
+  margin: 1.5rem 0;
+}
+
+ol {
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.3rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 0.8rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 1.4rem;
+  border: 1px solid goldenrod;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: goldenrod;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
 }
