@@ -5,6 +5,10 @@ body {
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
   }
 
+  html {
+    margin-bottom: 1px;
+  }
+
   img {
       max-width: 100%;
       display: block;
@@ -38,7 +42,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   nav a {
@@ -57,13 +61,17 @@ body {
   }
 
   .feature {
+      display: block;
       width: 200px;
+      float: left;
+      margin: 0 20px 20px 0;
   }
 /* these values need to be changed */
   article {
-    flex: 1;
+    flex: 5;
+    padding-right: 1em;
   }
 
   aside {
-    flex: 1;
+    flex: 2;
   }
