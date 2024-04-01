@@ -81,6 +81,7 @@ class Ball extends Shape {
 
 class EvilCircle extends Shape {
 
+  //the evil circle itself and controls.
   constructor(x, y) {
     super(x, y, 20, 20);
     this.color = "white";
@@ -112,6 +113,7 @@ class EvilCircle extends Shape {
     ctx.stroke();
   }
 
+  //preventing the controlled circle from going out of bounds.
   checkBounds() {
     if ((this.x + this.size) >= width) {
       this.x -= this.size;
@@ -147,6 +149,7 @@ class EvilCircle extends Shape {
 
 const balls = [];
 
+//ball "spawner" and counter.
 while (balls.length < 25) {
   const size = random(10, 20);
   const ball = new Ball(
@@ -162,6 +165,7 @@ while (balls.length < 25) {
   para.textContent = 'Ball count: ' + count;
 }
 
+//evil circle's existence.
 const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
