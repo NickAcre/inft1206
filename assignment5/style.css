@@ -52,7 +52,6 @@ p, li, table, .transcript {
 
 /* || header layout */
 
-/* The original contrast was 4.09 with green background.*/
 nav, article, footer, .secondary {
   background-color: white;
 }
@@ -63,17 +62,14 @@ article, footer, .secondary {
 
 article {
   margin-right: 10px;
-  /* added */
   min-width: 560px;
 }
 
 nav {
   height: 50px;
-  /*background-color: ff80ff;*/
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
-  /*added */
   justify-content: space-around;
 }
 
@@ -88,7 +84,6 @@ nav li {
   display: inline;
   text-align: center;
   flex: 1;
-  /*added*/
   min-width:154px;  
 }
 
@@ -259,7 +254,7 @@ audio {
   flex: 5;
 }
 
-/* Transcript control */
+/* Transcript */
 audio {
   margin: 0;
 }
@@ -273,7 +268,7 @@ audio {
   display: none;
 }
 
-/* responsive design */
+/* Menu shenanigans */
 
 .hamIcon {
   width: 36px;
